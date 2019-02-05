@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Main</title>
+  </head>
+  <body>
+    <h2>Main</h2>
+
+    <h5>Client X</h5>
+    <div>
+      <button onclick="opw('', 'cx')">Select</button>
+      <button onclick="cpw('cx')">Close</button>
+    </div>
+    <br />
+    <div>
+      <button onclick="opw('/action1.html', 'cx:a1')">Action 1</button>
+      <button onclick="opw('/action2.html', 'cx:a2')">Action 2</button>
+      <button onclick="opw('/action3.html', 'cx:a3')">Action 3</button>
+    </div>
+    <br />
+
+    <h5>Client Y</h5>
+    <div>
+      <button onclick="opw('', 'cy')">Select</button>
+      <button onclick="cpw('cy')">Close</button>
+    </div>
+    <br />
+    <div>
+      <button onclick="opw('/action1.html', 'cy:a1')">Action 1</button>
+      <button onclick="opw('/action2.html', 'cy:a2')">Action 2</button>
+    </div>
+
+    <script src="./index.js"></script>
+    <script>
+      const opw = openProcessWindow;
+      const cpw = closeProcessWindow;
+    </script>
+  </body>
+</html>
