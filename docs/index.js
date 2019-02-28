@@ -14,6 +14,6 @@ document.addEventListener('spe:closed', event => {
 });
 
 document.addEventListener('spe:select', event => {
-  const { id } = event.detail;
-  console.log('select ' + id);
+  const { id, actionId, taskId } = event.detail;
+  console.log('select ' + id, actionId, taskId);
 });
