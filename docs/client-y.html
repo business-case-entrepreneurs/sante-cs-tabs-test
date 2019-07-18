@@ -10,10 +10,14 @@
     <ul>
       <li><a href="/sante-cs-tabs-test/">Home</a></li>
       <li>
-        <a href="/sante-cs-tabs-test/client-x" target="_blank">Client X</a>
+        <a href="/sante-cs-tabs-test/client-x?CustomerId=cx" target="_blank"
+          >Client X</a
+        >
       </li>
       <li>
-        <a href="/sante-cs-tabs-test/client-y" target="_blank">Client Y</a>
+        <a href="/sante-cs-tabs-test/client-y?CustomerId=cy" target="_blank"
+          >Client Y</a
+        >
       </li>
     </ul>
 
@@ -24,10 +28,14 @@
     </div>
     <br />
     <div>
-      <button onclick="opw('/sante-cs-tabs-test/action1.html', 'cy:a1')">
+      <button
+        onclick="opw('/sante-cs-tabs-test/action1.html?CustomerId=cy&ActionId=a1', 'cy:a1')"
+      >
         Action 1
       </button>
-      <button onclick="opw('/sante-cs-tabs-test/action2.html', 'cy:a2')">
+      <button
+        onclick="opw('/sante-cs-tabs-test/action2.html?CustomerId=cy&ActionId=a2', 'cy:a2')"
+      >
         Action 2
       </button>
     </div>
