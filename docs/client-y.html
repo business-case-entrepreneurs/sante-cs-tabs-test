@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Client Y</title>
+  </head>
+  <body>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/client-x" target="_blank">Client X</a></li>
+      <li><a href="/client-y" target="_blank">Client Y</a></li>
+    </ul>
+
+    <h5>Client Y</h5>
+    <div>
+      <button onclick="opw('', 'cy')">Select</button>
+      <button onclick="cpw('cy')">Close</button>
+    </div>
+    <br />
+    <div>
+      <button onclick="opw('/sante-cs-tabs-test/action1.html', 'cy:a1')">
+        Action 1
+      </button>
+      <button onclick="opw('/sante-cs-tabs-test/action2.html', 'cy:a2')">
+        Action 2
+      </button>
+    </div>
+
+    <script src="./index.js"></script>
+    <script>
+      const opw = openProcessWindow;
+      const cpw = closeProcessWindow;
+    </script>
+  </body>
+</html>
