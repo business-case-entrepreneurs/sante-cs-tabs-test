@@ -7,23 +7,27 @@
     <title>Home</title>
   </head>
   <body>
-    <ul>
-      <li><a href="/sante-cs-tabs-test/">Home</a></li>
-      <li>
-        <a onclick="open('/sante-cs-tabs-test/client-x?CustomerId=cx', 'cx')">
-          Client X
-        </a>
-      </li>
-      <li>
-        <a onclick="open('/sante-cs-tabs-test/client-y?CustomerId=cy', 'cy')">
-          Client Y
-        </a>
-      </li>
-    </ul>
+    <div>
+      <h4>Pages</h4>
+      <button
+        onclick="open('/sante-cs-tabs-test/client-x?CustomerId=cx', 'cx')"
+      >
+        Client X
+      </button>
+      <button
+        onclick="open('/sante-cs-tabs-test/client-y?CustomerId=cy', 'cy')"
+      >
+        Client Y
+      </button>
+    </div>
+    <br />
 
-    <button onclick="opw('https://bce.consulting')">
-      BCE consulting
-    </button>
+    <div>
+      <h4>Actions</h4>
+      <button onclick="opw('https://bce.consulting')">
+        BCE consulting
+      </button>
+    </div>
 
     <script src="./index.js"></script>
     <script>

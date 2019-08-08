@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "browser-sync start --server docs --files \"docs/*\""
+    "serve": "http-server docs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.3"
+    "http-server": "^0.11.1"
   }
 }

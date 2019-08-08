@@ -7,19 +7,18 @@
     <title>Client Y</title>
   </head>
   <body>
-    <ul>
-      <li><a href="/sante-cs-tabs-test/">Home</a></li>
-      <li>
-        <a onclick="open('/sante-cs-tabs-test/client-x?CustomerId=cx', 'cx')">
-          Client X
-        </a>
-      </li>
-      <li>
-        <a onclick="open('/sante-cs-tabs-test/client-y?CustomerId=cy', 'cy')">
-          Client Y
-        </a>
-      </li>
-    </ul>
+    <div>
+      <button
+        onclick="open('/sante-cs-tabs-test/client-x?CustomerId=cx', 'cx')"
+      >
+        Client X
+      </button>
+      <button
+        onclick="open('/sante-cs-tabs-test/client-y?CustomerId=cy', 'cy')"
+      >
+        Client Y
+      </button>
+    </div>
 
     <h5>Client Y</h5>
     <div>
