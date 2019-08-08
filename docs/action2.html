@@ -8,5 +8,15 @@
   </head>
   <body>
     <h2>Action 2</h2>
+
+    <script>
+      window.onload = function() {
+        const url = new URL(window.location.href);
+        const cid = searchParams.get('CustomerId');
+        const aid = searchParams.get('ActionId');
+
+        document.title = `${cid}:${aid}`;
+      };
+    </script>
   </body>
 </html>
