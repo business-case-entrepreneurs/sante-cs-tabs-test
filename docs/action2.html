@@ -12,8 +12,8 @@
     <script>
       window.onload = function() {
         const url = new URL(window.location.href);
-        const cid = searchParams.get('CustomerId');
-        const aid = searchParams.get('ActionId');
+        const cid = url.searchParams.get('CustomerId');
+        const aid = url.searchParams.get('ActionId');
 
         document.title = `${cid}:${aid}`;
       };
