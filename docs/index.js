@@ -17,3 +17,7 @@ document.addEventListener('spe:select', event => {
   const { id, actionId, taskId } = event.detail;
   console.log('select ' + id, actionId, taskId);
 });
+
+function openClientPage(id) {
+  window.open(`/sante-cs-tabs-test/client-${id}?CustomerId=${id}`, id);
+}
